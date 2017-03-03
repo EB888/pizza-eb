@@ -8,6 +8,15 @@
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
 
+##Specifications
+
+| Behavior | Input Example  | Output Example  |
+|---|---|---|
+| Output can accurately calculate the cost of a plain standard size pizza without toppings | Standard Size - $20 | Your total is $20 |
+| Output can accurately calculate the cost of a plain standard size pizza with one topping | Standard Size - $20 + Pepperoni - $3 | Your total is $23 |
+|  |  |  |
+|  |  |  |
+
 ## Setup/Installation Requirements
 
 * _This is a great place_

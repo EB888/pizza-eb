@@ -1,0 +1,13 @@
+body{
+  background-size: cover;
+  background-color: #000;
+  font-family: 'Ubuntu', sans-serif;
+  /*text-shadow: 1px 1px #e6e600;*/
+  color:#e6e600
+}
+.container{
+  /*background-image: url(../img/scotties.jpeg);*/
+}
+.well{
+  background-color: #000;
+}
