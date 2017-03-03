@@ -18,8 +18,9 @@
     // arrays
 
 // BACK OF HOUSE
-var largeSize = 20
-var pepperoni = 3
+// var largeSize = 20
+// var pepperoni = 3
+// var totalCost;
 
 function Pizza(sizeCost, toppingsCost){
   this.sizeCost = sizeCost;
@@ -27,12 +28,21 @@ function Pizza(sizeCost, toppingsCost){
 }
 
 Pizza.prototype.calculate = function() {
-  totalCost = this.sizeCost + this.toppingsCost;
+  var totalCost = this.sizeCost + this.toppingsCost;
   return totalCost;
 }
 
-var testPizza = new Pizza(largeSize, pepperoni);
+// var testPizza = new Pizza(largeSize, pepperoni);
+
 // FRONT OF HOUSE
 $(function(){
-  
-})
+  $("#orderForm").submit(function(event){
+    event.preventDefault();
+    var finalSize = parseInt($("input:radio[name=size]:checked").val());
+    var finalToppings = parseInt($("input:radio[name=toppings]:checked").val());
+    var finalPizza = new Pizza(finalSize, finalToppings);
+    var finalCost = finalPizza.calculate();
+    $("#totalPriceSpan").append(finalCost);
+    $("#totalPriceDiv").show();
+  });
+});

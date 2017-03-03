@@ -11,3 +11,9 @@ body{
 .well{
   background-color: #000;
 }
+.btn{
+  color: #000;
+}
+div#totalPriceDiv{
+  display: none;
+}
