@@ -1,12 +1,17 @@
 body{
-  background-size: cover;
   background-color: #000;
   font-family: 'Ubuntu', sans-serif;
-  /*text-shadow: 1px 1px #e6e600;*/
   color:#e6e600
+  /*color: #009999;*/
+}
+h3{
+  color:red;
+}
+div.radio:hover, .hoverGreen:hover{
+  color:#0f0;
 }
 .well{
-  background-color: #000;
+  background-color: #000
 }
 .btn{
   color: #000;
