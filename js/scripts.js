@@ -33,3 +33,6 @@ Pizza.prototype.calculate = function() {
 
 var testPizza = new Pizza(largeSize, pepperoni);
 // FRONT OF HOUSE
+$(function(){
+  
+})
