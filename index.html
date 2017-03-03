@@ -13,7 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center">AnonyPizza</h1>
+          <h1 class="text-center">Welcome to AnonyPizza!</h1>
         </div>
         <div class="col-md-3">
           <!-- EMPTY COLUMN -->
@@ -22,20 +22,21 @@
           <!-- BEGINNING OF FORM -->
           <form id="orderForm">
             <div class="form-group">
-              <div class="radio">
+              <!-- <div class="radio"> -->
                 <h3 class="text-center">Choose Your Size:</h3>
-                <label>
-                  <input type="radio" name="size" value="20">
-                  Standard Size (18")
-                </label>
-              </div>
-              <div class="radio">
+                <!-- <label> -->
+                  <input type="checkbox" name="size" value="20"> Standard Size (18", $20) <br>
+                <!-- </label> -->
+              <!-- </div> -->
+              <!-- <div class="radio"> -->
                 <h3 class="text-center">Choose Your Toppings:</h3>
-                <label>
-                  <input type="radio" name="toppings" value="3">
-                  Pepperoni
-                </label>
-              </div>
+                <!-- <label> -->
+                  <input type="checkbox" name="toppings" value="3"> Pepperoni ($3)<br>
+                  <input type="checkbox" name="toppings" value="3"> Pineapple ($3)<br>
+                  <input type="checkbox" name="toppings" value="3"> Green Peppers ($3)<br>
+                  <input type="checkbox" name="toppings" value="3"> Onions ($3)<br>
+                <!-- </label> -->
+              <!-- </div> -->
             </div>
             <button type="submit" class="btn">Submit Order</button>
           </form>
@@ -50,8 +51,8 @@
           <!-- PRICE OUTPUT COL-12 -->
           <div class="well">
             <div id="totalPriceDiv">
-              <p>Your total price will be: $<span id="totalPriceSpan"></span></p>
               <p>Thank You For Your Order!</p>
+              <p>Your final price will be: $<span id="totalPriceSpan"></span></p>
             </div>
           </div>
         </div>

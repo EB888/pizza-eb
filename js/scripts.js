@@ -32,14 +32,26 @@ Pizza.prototype.calculate = function() {
   return totalCost;
 }
 
-// var testPizza = new Pizza(largeSize, pepperoni);
+// var toppingsArray = [];
 
 // FRONT OF HOUSE
 $(function(){
   $("#orderForm").submit(function(event){
     event.preventDefault();
-    var finalSize = parseInt($("input:radio[name=size]:checked").val());
-    var finalToppings = parseInt($("input:radio[name=toppings]:checked").val());
+    $("#totalPriceSpan").empty();
+    var finalToppings = 0;
+
+    // var finalSize = parseInt($("input:radio[name=size]:checked").val());
+    var finalSize = parseInt($("input:checkbox[name=size]:checked").val());
+    console.log(finalSize);
+
+    // var finalToppings = parseInt($("input:radio[name=toppings]:checked").val());
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      finalToppings = finalToppings + parseInt($(this).val());
+      // console.log(parseInt($(this).val()));
+    });
+    console.log(finalToppings);
+
     var finalPizza = new Pizza(finalSize, finalToppings);
     var finalCost = finalPizza.calculate();
     $("#totalPriceSpan").append(finalCost);
