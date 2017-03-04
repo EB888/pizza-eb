@@ -6,7 +6,6 @@ function Pizza(size, toppings){
 
 Pizza.prototype.calculate = function(toppingArray) {
   var toppingDollars = 0;
-
   for(i=0;i<toppingArray.length;i++){
     toppingDollars += toppingArray[i]
   }
