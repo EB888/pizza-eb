@@ -8,6 +8,9 @@
 ###### A practice in objects, prototypes, and constructors
 3-3-17 Current Version
 
+<img src="/img/pizza1.png"/>
+<img src="/img/pizza2.png"/>
+
 ## Specifications
 
 | Behavior | Input Example  | Output Example  |
