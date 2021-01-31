@@ -31,7 +31,7 @@ Currently no known bugs
 
 ## Support and contact details
 
-If you have issues, ideas, or concerns, please contact me at evan.bishop888@gmail.com
+If you have issues, ideas, or concerns, please contact me at
 
 ## Technologies Used
 
